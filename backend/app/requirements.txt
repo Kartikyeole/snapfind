@@ -1,0 +1,8 @@
+Django
+djangorestframework
+pymongo
+dnspython
+opencv-python
+face-recognition
+django-storages[boto3]
+pinecone-client 
