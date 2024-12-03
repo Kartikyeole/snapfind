@@ -21,6 +21,8 @@ AWS_S3_REGION_NAME = os.getenv("AWS_S3_REGION_NAME")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_REGION = 'us-east-1'
 
+PROJECT_DEBUG = os.getenv("PROJECT_DEBUG", "False") == "True"
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xfi$b2yblo29ipxl4^6e%(37m8=kzq%8ib+_t!o6s@=fxl9_3%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = PROJECT_DEBUG
 
 ALLOWED_HOSTS = []
 
