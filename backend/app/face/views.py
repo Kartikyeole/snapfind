@@ -9,7 +9,7 @@ import asyncio
 from django.core.files.base import ContentFile
 import uuid
 from .pinecone_client import PineconeClient
-import logging
+import logging  
 from .models import Users
 from asgiref.sync import sync_to_async
 
